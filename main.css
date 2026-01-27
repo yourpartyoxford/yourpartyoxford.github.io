@@ -1,0 +1,447 @@
+@font-face {
+    font-family: OpenSauceSans;
+    src: url('OpenSauceSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Anton;
+    src: url('Anton-Regular.ttf')
+}
+
+
+.top-navigation-right {
+    float: right;
+    display: inline-block;
+    max-width: 70%;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #FAF6E8;
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    /* letter-spacing: 0px; */
+    line-height: 36px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 0;
+}
+
+.navbar-title {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 20px;
+    margin-left: 380px;
+    text-transform: uppercase;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: #FF3131;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    /* background-color: #4CAF50; */
+    color: black;
+}
+
+.navbar a.icon {
+    display: none;
+}
+
+
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: #042830;
+    background-color: #FAF6E8;
+
+    font-family: "OpenSauceSans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 100%;
+    word-wrap: break-word;
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 80%;
+    position: relative;
+    z-index: 2;
+}
+
+main > header,
+main > section,
+main > .nav-row,
+main > .about-meetings-section,
+main > .news-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2em;
+    box-sizing: border-box;
+}
+
+main > section {
+    margin-bottom: 3em;
+}
+
+.about-meetings-section .nav-row {
+    padding: 0;
+}
+
+.join-cards {
+    margin-top: 30vh;
+}
+
+h1 {
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    font-size: 80px;
+    letter-spacing: 0px;
+    line-height: 1em;
+}
+
+.index-title {
+    font-size: 120px;
+}
+
+h2 {
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    font-size: 2.5vw;
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    font-size: 4vh;
+    letter-spacing: 0px;
+    line-height: 1em;
+    color: #FF3131;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.nav-button {
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #042830;
+    color: #FFF;
+    padding: 1em;
+    margin: 0.5em;
+    font-size: 2em;
+    width: fit-content;
+    white-space: nowrap;
+    flex: 1 1 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2em;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2em;
+    box-sizing: border-box;
+}
+
+.nav-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 36vh;
+    margin-top: -3vh;
+    background: #FFFFFF;
+}
+
+.nav-card {
+    flex: 1;
+    padding: 2em;
+    text-align: left;
+    background: #FFFFFF;
+    color: #FF3131;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.nav-card a {
+   text-decoration: none;
+}
+
+.nav-card h3 {
+   margin-bottom: 1em;
+}
+
+.nav-card p {
+   font-family: "Open Sauce Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+   font-size: 18px;
+   color: #042830;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 3em;
+}
+
+.news-card {
+    padding: 2em;
+    text-align: left;
+    background: #FFFFFF;
+    color: #FF3131;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.news-card-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: flex-start;
+}
+
+.news-card-text {
+    flex: 1;
+}
+
+.news-card h3 {
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+.news-card p {
+    font-family: "Open Sauce Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 18px;
+    color: #042830;
+}
+
+.news-image {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.nav-button {
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* background: #042830; */
+    color: #FFF;
+    padding: 0.5em;
+    margin: 0.25em;
+    font-size: 2.5vh;
+    width: 80%;
+    white-space: nowrap;
+    text-align: center;
+    min-width: 10em;
+    max-width: 10em;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+.red-triangle-one {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 400px 400px 0 0;
+    border-color: #FF3131 transparent transparent transparent;
+    transform: rotate(0deg);
+    z-index: 1;
+}
+
+.red-triangle-two {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 3vh 3vh 0 0;
+    border-color: #FF3131 transparent transparent transparent;
+    transform: rotate(0deg);
+}
+
+.vertical-align-children {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#body-item-1 {
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+}
+
+#body-item-2 {
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+#body-item-3 {
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+#body-item-4 {
+    margin-top: 2.5vh;
+    margin-bottom: 5vh;
+}
+
+.button-subtext {
+    font-size: 0.33em;
+    text-align: center;
+    opacity: 50%;
+    font-family: "OpenSauceSans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    margin-top: 0.33em;
+    margin-bottom: -1.75em;
+}
+
+.button-text {
+    text-decoration: underline;
+}
+
+.disabled {
+    opacity: 50%;
+}
+
+.subtitle {
+    width: 50%;
+    text-align: center;
+}
+
+.red-text {
+    color: #FF3131;
+}
+
+.totals-containers {
+    width: 25%;
+    line-height: 1.25em;
+    margin: 0 0.5em;
+}
+
+@media (min-width: 1071px) {
+    .hidden-on-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 1070px) {
+    .hidden-on-mobile {
+        display: none;
+    }
+
+    .red-triangle-one {
+        border-width: 25vw 25vw 0 0;
+    }
+
+    h1 {
+        font-size: 3.5em;
+        line-height: 1em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .nav-button {
+        padding: 0.75em;
+        font-size: 1.25em;
+        height: fit-content;
+    }
+
+    .nav-row {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: -4vh;
+    }
+
+    #body-item-1 {
+        margin-top: 7.5vh;
+        margin-bottom: 1vh;
+    }
+
+    #body-item-2 {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        flex-direction: column;
+    }
+
+    #body-item-3 {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    #body-item-4 {
+        margin-top: 1vh;
+        margin-bottom: 2.5vh;
+    }
+
+    .button-subtext {
+        font-size: 0.4em;
+        text-align: center;
+        opacity: 50%;
+        margin-top: 0.1em;
+        margin-bottom: -1.25em;
+    }
+
+    .subtitle {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .totals-container {
+        margin: 0 0.5em;
+        text-align: center;
+    }
+}
