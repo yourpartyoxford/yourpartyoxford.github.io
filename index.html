@@ -29,7 +29,15 @@
 <body>
     <div class="red-triangle-one"></div>
     <div class="navbar" id="myNavbar">
-        <!-- <span class="navbar-title">Your Party Oxford</span> -->
+        <a href="javascript:void(0);" class="menu-toggle" onclick="toggleMenu()">
+            <span class="mobile-title">YP Oxford</span>
+            Menu
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </a>
         <a href="join.html">Get involved</a>
         <a href="about.html">About</a>
         <a href="index.html">Home</a>
@@ -79,6 +87,13 @@
             </div>
         </div>
     </main>
+
+    <script>
+        function toggleMenu() {
+            var navbar = document.getElementById("myNavbar");
+            navbar.classList.toggle("expanded");
+        }
+    </script>
 </body>
 
 </html>
